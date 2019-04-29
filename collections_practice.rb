@@ -155,7 +155,7 @@ puts "Should be [{:name => 'blake',:temperature => 'cool'}]"
 def organize_schools(schools)
   schools.values.uniq.map do |item|
     {item[:location] => schools.select{|school,loc| loc[:location] == item[:location]}.keys}
-  end.class#sort_by{|key, value| key}
+  end
 end
 
 puts
