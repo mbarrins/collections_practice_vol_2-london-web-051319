@@ -103,6 +103,7 @@ def remove_non_strings(arr)
 end
 
 def count_elements(arr)
+  binding.pry
   new_arr = arr.uniq
   arr.map.each do |item|
     item[:count] = arr.count(item)
