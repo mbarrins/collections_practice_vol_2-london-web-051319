@@ -115,8 +115,3 @@ def organize_schools(schools)
     [item[:location], schools.select{|school,loc| loc[:location] == item[:location]}.keys]
   end.to_h
 end
-
-puts
-puts organize_schools(schools)
-puts "Should be: "
-puts organized_schools
