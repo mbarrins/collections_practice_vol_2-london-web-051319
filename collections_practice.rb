@@ -156,7 +156,7 @@ def organize_schools(schools)
   # new_arr = schools.values.uniq
   # binding.pry
   # new_arr.each do |item
-  schools.values.uniq.mapdo |item|
+  schools.values.uniq.map do |item|
     {item[:location] => schools.select{|school,loc| loc[:location] == item[:location]}.keys}
   end
 end
