@@ -112,6 +112,7 @@ def merge_data(keys, data)
   keys.each do |item|
     new_arr << item.merge(data[0][item[:first_name]])
   end
+  binding.pry
   new_arr
 end
 
