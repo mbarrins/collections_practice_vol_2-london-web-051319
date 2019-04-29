@@ -160,6 +160,6 @@ def organize_schools(schools)
 end
 
 puts
-puts organize_schools(schools)
+puts organize_schools(schools).inspect
 puts "Should be: "
 puts organized_schools
