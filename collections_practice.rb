@@ -103,11 +103,11 @@ def remove_non_strings(arr)
 end
 
 def count_elements(arr)
-  # new_arr = arr.uniq
-  arr.uniq.map.each do |item|
-    [item[:count], arr.count(item)]
-  end.to_h
-  # new_arr
+  new_arr = arr.uniq
+  arr.map.each do |item|
+    item[:count] = arr.count(item)
+  end
+  new_arr
   #names = ["Jason", "Jason", "Teresa", "Judah", "Michelle", "Judah", "Judah", "Allison"]
   # counts = Hash.new(0)
   # names.each { |name| counts[name] += 1 }
@@ -137,7 +137,7 @@ end
 
 def organize_schools(schools)
   # binding.pry
-  schools.values.uniq.sort_by{|k,v| v}.map do |item|
+  schools.values.uniq.map do |item|
     [item[:location], schools.select{|school,loc| loc[:location] == item[:location]}.keys]
   end.to_h
 end
