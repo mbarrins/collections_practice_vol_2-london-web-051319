@@ -106,10 +106,6 @@ def count_elements(arr)
   arr.uniq.map{|item| item.merge({:count => arr.count(item)})}
 end
 
-puts
-puts count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}]).inspect
-puts "Should be [{:name => 'blake', :count => 2}, {:name => 'ashley', :count => 1}]"
-
 def merge_data(keys, data)
   # keys.each{|item| item[:first_name]}
   new_arr = []
