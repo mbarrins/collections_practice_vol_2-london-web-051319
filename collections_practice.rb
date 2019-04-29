@@ -111,7 +111,6 @@ def find_cool(arr)
 end
 
 def organize_schools(schools)
-  # binding.pry
   schools.values.uniq.map do |item|
     [item[:location], schools.select{|school,loc| loc[:location] == item[:location]}.keys]
   end.to_h
