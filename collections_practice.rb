@@ -94,10 +94,6 @@ def first_wa(arr)
   arr.find{|item| item.to_s.downcase[0..1]=="wa"}
 end
 
-puts
-puts first_wa(["candy", :pepper, "wall", :ball, "wacky"])
-puts "Should be wall."
-
 def remove_non_strings(arr)
   arr.select{|item| item.class == String}
 end
