@@ -106,11 +106,6 @@ def merge_data(keys, data)
   keys.map{|item| item.merge(data[0][item[:first_name]])}
 end
 
-puts
-puts merge_data(keys, data)
-puts "Should be: "
-puts merged_data
-
 def find_cool(arr)
   arr.select{|item| item[:temperature] == "cool"}
 end
