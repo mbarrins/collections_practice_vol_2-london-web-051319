@@ -104,7 +104,7 @@ end
 
 def count_elements(arr)
   # new_arr = arr.uniq
-  arr.map.each do |item|
+  arr.uniq.map.each do |item|
     [item[:count], arr.count(item)]
   end.to_h
   # new_arr
