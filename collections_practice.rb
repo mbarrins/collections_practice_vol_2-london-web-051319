@@ -103,11 +103,11 @@ def remove_non_strings(arr)
 end
 
 def count_elements(arr)
-  new_arr = arr.uniq
-  new_arr.each do |item|
-    item[:count] = arr.count(item)
-  end
-  new_arr
+  # new_arr = arr.uniq
+  arr.map.each do |item|
+    [item[:count], arr.count(item)]
+  end.to_h
+  # new_arr
   #names = ["Jason", "Jason", "Teresa", "Judah", "Michelle", "Judah", "Judah", "Allison"]
   # counts = Hash.new(0)
   # names.each { |name| counts[name] += 1 }
