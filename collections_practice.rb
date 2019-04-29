@@ -153,7 +153,7 @@ puts find_cool(cool)
 puts "Should be [{:name => 'blake',:temperature => 'cool'}]"
 
 def organize_schools(schools)
-  binding.pry
+  # binding.pry
   schools.values.uniq.sort_by{|k,v| v}.map do |item|
     {item[:location] => schools.select{|school,loc| loc[:location] == item[:location]}.keys}
   end
