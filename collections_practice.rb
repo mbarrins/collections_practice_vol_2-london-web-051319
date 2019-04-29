@@ -103,14 +103,7 @@ def count_elements(arr)
 end
 
 def merge_data(keys, data)
-  # keys.each{|item| item[:first_name]}
-  # new_arr = []
-  # keys.each do |item|
-  #   new_arr << item.merge(data[0][item[:first_name]])
-  # end
-  # binding.pry
   keys.map{|item| item.merge(data[0][item[:first_name]])}
-  # new_arr
 end
 
 puts
