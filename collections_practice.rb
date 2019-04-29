@@ -91,7 +91,8 @@ def contain_a(arr)
 end
 
 def first_wa(arr)
-  arr.each{|item| return item.to_s if item.to_s.downcase[0..1]=="wa"}
+  # arr.each{|item| return item.to_s if item.to_s.downcase[0..1]=="wa"}
+  arr.find{|item| item.to_s.downcase[0..1]=="wa"}
 end
 
 puts
