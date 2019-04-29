@@ -113,6 +113,7 @@ def merge_data(keys, data)
     new_arr << item.merge(data[0][item[:first_name]])
   end
   binding.pry
+  keys.map{|item| item.merge(data[0][item[:first_name]])}
   new_arr
 end
 
